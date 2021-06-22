@@ -3,7 +3,6 @@
 STATEMENT:
 We want to create an app that indicates what personality you are when answering 10 questions that deliver a score.
 - ask for name
-- ask for age
 - total 10 questions with 3 options
 - add points for each question
 - according to total, 1 out of 5 murderous bunny personality
@@ -12,7 +11,6 @@ This could surely be done with classes, but how?
 
 Possible classes:
 - User
-- Age(?)
 - Question
 - Score
 - Profile
@@ -24,7 +22,7 @@ ze_score = []
 def start():
     name=input('Hello! What is your name? ')
 
-    print('So',name,', let us take a test. Answer the following 10 questions.')
+    print("So",name,", let's take a test. Answer the following 10 questions,and find your murderous bunny totem.")
     total_score=0
     questions(total_score)
     final_score()
@@ -32,21 +30,21 @@ def start():
 def score1 (total_score,question):
     if question == 'a':
         total_score += 2
-    if question == 'b':
+    elif question == 'b':
         total_score += 3
-    if question == 'c':
+    elif question == 'c':
         total_score += 4
     else:
-        print('That is no valid answer') #this one is always printed - why?
+        print('That is no valid answer') 
     ze_score.append(total_score)
     print (total_score)
 
 def score2 (total_score,question):
     if question == 'a':
         total_score += 3
-    if question == 'b':
+    elif question == 'b':
         total_score += 2
-    if question == 'c':
+    elif question == 'c':
         total_score += 4
     else:
         print('That is no valid answer')
@@ -56,9 +54,9 @@ def score2 (total_score,question):
 def score3 (total_score,question):
     if question == 'a':
         total_score += 4
-    if question == 'b':
+    elif question == 'b':
         total_score += 2
-    if question == 'c':
+    elif question == 'c':
         total_score += 1
     else:
         print('That is no valid answer')
