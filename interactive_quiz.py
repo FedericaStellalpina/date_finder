@@ -37,7 +37,6 @@ def score1 (total_score,question):
     else:
         print('That is no valid answer') 
     ze_score.append(total_score)
-    print (total_score)
 
 def score2 (total_score,question):
     if question == 'a':
@@ -49,7 +48,6 @@ def score2 (total_score,question):
     else:
         print('That is no valid answer')
     ze_score.append(total_score)
-    print (total_score)
 
 def score3 (total_score,question):
     if question == 'a':
@@ -61,7 +59,6 @@ def score3 (total_score,question):
     else:
         print('That is no valid answer')
     ze_score.append(total_score)
-    print (total_score)
     
 def questions (total_score):
     question = input('''
@@ -74,19 +71,82 @@ def questions (total_score):
     score1(total_score,question)
 
     question = input('''
-    What is your favourite color?
-    a) blue
-    b) red
-    c) purple
+    What is your favourite animal?
+    a) snake
+    b) unicorn
+    c) narwhale
 
     Answer: ''')
     score2(total_score,question)
 
     question = input('''
-    What is your favourite color?
-    a) blue
-    b) red
-    c) purple
+    What is your favourite dessert?
+    a) strawberry cake
+    b) tiramisu
+    c) apple pie
+
+    Answer: ''')
+    score3(total_score,question)
+
+    question = input('''
+    What is your favourite book?
+    a) 100 yesra of solitude
+    b) the master and margherita
+    c) the ocean at the end of the lane
+
+    Answer: ''')
+    score1(total_score,question)
+
+    question = input('''
+    What is your favourite number?
+    a) 7
+    b) 6
+    c) 01
+
+    Answer: ''')
+    score2(total_score,question)
+
+    question = input('''
+    What is your favourite artist?
+    a) Monet
+    b) Manet
+    c) Gaugin
+
+    Answer: ''')
+    score3(total_score,question)
+
+    question = input('''
+    What is your favourite sport?
+    a) running
+    b) diving
+    c) squash
+
+    Answer: ''')
+    score1(total_score,question)
+
+    question = input('''
+    What is your favourite series?
+    a) Adventure time
+    b) Final Space
+    c) Lucifer
+
+    Answer: ''')
+    score2(total_score,question)
+
+    question = input('''
+    What is your favourite dish?
+    a) lasagne
+    b) pink soup
+    c) steak
+
+    Answer: ''')
+    score3(total_score,question)
+
+    question = input('''
+    What is your favourite language?
+    a) python
+    b) ruby
+    c) java
 
     Answer: ''')
     score3(total_score,question)
